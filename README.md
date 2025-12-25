@@ -1,3 +1,11 @@
+![Android](https://img.shields.io/badge/Platform-Android-brightgreen)
+![Language](https://img.shields.io/badge/Language-Java-orange)
+![Language](https://img.shields.io/badge/Language-XML-blue)
+![Language](https://img.shields.io/badge/Language-SQLite-lightgrey)
+![Release](https://img.shields.io/badge/Release-v1.1-brightgreen)
+![Myket](https://img.shields.io/badge/Myket-Download-blue)
+![Last update](https://img.shields.io/badge/Last_Update-2022--09--24-yellow)
+
 # MetaMath
 
 **MetaMath** is a multifunctional Android calculator app that goes beyond basic calculations. It includes unit conversion, financial tools, geometry calculations, number base conversion, mathematical formulas, and a BMI calculator. Built using Java, XML, and SQLite with a focus on practical real-world usage.  
