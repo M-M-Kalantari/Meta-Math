@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout_Menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_shape_001">
+
+    <ImageView
+        android:id="@+id/ImageView_menu_Icon"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_shape_002"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_000_icon" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_History"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/ImageView_menu_Icon"
+        android:background="@drawable/bg_selector_005"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_History"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_cal_special_history" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_History"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:text="History"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_Notepad"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LinearLayout_Menu_History"
+        android:background="@drawable/bg_selector_005"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_Notepad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_cal_special_notepad" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_Notepad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:text="Notepad"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_Scientists"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LinearLayout_Menu_Notepad"
+        android:background="@drawable/bg_selector_005"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_Scientists"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_003_scientists" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_Scientists"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:text="Math Scientists"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_Languages"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LinearLayout_Menu_Scientists"
+        android:background="@drawable/bg_selector_005"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_Languages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_003_language" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_Languages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:text="Languages"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_Settings"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LinearLayout_Menu_Languages"
+        android:background="@drawable/bg_selector_005"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_Settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_003_setting" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_Settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_Guide"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LinearLayout_Menu_Settings"
+        android:background="@drawable/bg_selector_005"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_Guide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_003_question" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_Guide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:text="Guide"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_information"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/LinearLayout_Menu_Guide"
+        android:background="@drawable/bg_selector_005"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_information"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_003_info" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_information"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:text="About us"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Menu_Display"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/bg_shape_006">
+
+        <ImageView
+            android:id="@+id/ImageView_Menu_Display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_003_display" />
+
+        <TextView
+            android:id="@+id/TextView_Menu_Display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Display On"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <Switch
+            android:id="@+id/Switch_Menu_Display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+</RelativeLayout>

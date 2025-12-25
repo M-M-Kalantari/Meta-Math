@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout_Currency"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragments.Currency.FragmentCurrency">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape_006"
+        android:layout_margin="5dp"
+        android:layout_above="@id/banner_ad">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_CurrencyFields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_SelectedField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_shape_002"
+                android:layout_margin="1dp"
+                android:orientation="horizontal"
+                android:weightSum="5.5">
+
+                <ImageView
+                    android:id="@+id/ImageView_SelectedField"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/ic_cur_coin" />
+
+                <TextView
+                    android:id="@+id/TextView_SelectedField"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:hint=""
+                    android:padding="1dp"
+                    android:text="Compound Interest"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="normal"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:clickable="false"
+                    android:focusable="false"/>
+
+                <ImageView
+                    android:id="@+id/ImageView_Share"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.5"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/ic_004_share" />
+
+                <ImageView
+                    android:id="@+id/ImageView_Clean"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.5"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/ic_004_trash" />
+
+                <ImageView
+                    android:id="@+id/ImageView_Back"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.5"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/ic_004_back" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/ScrollView_Financial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/LinearLayout_SelectedField"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout_Financial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout_Financial_Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_shape_006"
+                        android:padding="5dp">
+
+                        <Switch
+                            android:id="@+id/Switch_CompoundInterest"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:checked="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="Compound Interest"
+                            android:textSize="25dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:textAlignment="center"
+                            android:background="@drawable/bg_shape_006"
+                            android:padding="5dp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <EditText
+                            android:id="@+id/EditText_Amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_shape_006"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:hint="Amount"
+                            android:inputType="numberDecimal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="25dp"
+                            android:textStyle="normal"
+                            android:visibility="visible"
+                            android:padding="5dp"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <EditText
+                            android:id="@+id/EditText_InterestRates"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_shape_006"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:hint="Monthly Interest Rate (%)"
+                            android:inputType="numberDecimal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="normal"
+                            android:visibility="visible"
+                            android:padding="5dp" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <EditText
+                            android:id="@+id/EditText_InvestmentDuration"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_shape_006"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:hint="Investment Duration (Month)"
+                            android:inputType="number"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="normal"
+                            android:visibility="visible"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout_Financial_Output"
+                        android:layout_below="@+id/LinearLayout_Financial_Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_shape_006"
+                        android:padding="5dp"
+                        android:layout_marginTop="25dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/TextInputLayout_TotalAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorless"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="visible"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/EditText_TotalAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="30dp"
+                                android:textStyle="normal"
+                                android:textAllCaps="false"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:hint="Total Amount"
+                                android:background="@color/colorless"
+                                android:visibility="visible"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/TextInputLayout_Interest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorless"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="visible"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/EditText_Interest"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="30dp"
+                                android:textStyle="normal"
+                                android:textAllCaps="false"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:hint="Interest"
+                                android:background="@color/colorless"
+                                android:visibility="visible"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ListView_CurrencyItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <com.adivery.sdk.AdiveryBannerAdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_ad"
+        app:placement_id="81895010-eb63-4693-b0d0-35192eedb1c8"
+        app:banner_size="smart_banner"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>

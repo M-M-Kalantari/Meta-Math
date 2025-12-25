@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragments.Health.FragmentHealth">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/banner_ad"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_shape_006">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Health_BMI_Item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_selector_004"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ImageView_Health_BMI"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/ic_hea_bmi" />
+
+            <TextView
+                android:id="@+id/TextView_Health_BMI"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:clickable="false"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint=""
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="1dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="BMI"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_Health_BMI_Field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_Selected_BMI"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_shape_002"
+                android:layout_margin="1dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/ImageView_Selected_BMI"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/ic_hea_bmi" />
+
+                <TextView
+                    android:id="@+id/TextView_Selected_BMI"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:hint=""
+                    android:padding="1dp"
+                    android:text="BMI"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="normal"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:clickable="false"
+                    android:focusable="false"/>
+
+                <ImageView
+                    android:id="@+id/ImageView_Clean_BMI"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.5"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/ic_004_trash" />
+
+                <ImageView
+                    android:id="@+id/ImageView_Back_BMI"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.5"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/ic_004_back" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/LinearLayout_Selected_BMI"
+                android:layout_margin="5dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TextInputLayout_Field_Weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorless"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:visibility="visible"
+                        android:clickable="false"
+                        android:focusable="false">
+
+                        <EditText
+                            android:id="@+id/EditText_Field_Weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="normal"
+                            android:textAllCaps="false"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:hint="Weight"
+                            android:background="@color/colorless"
+                            android:visibility="visible"
+                            android:clickable="true"
+                            android:focusable="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TextInputLayout_Field_Height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:background="@color/colorless"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:visibility="visible"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_below="@+id/TextInputLayout_Field_Weight">
+
+                        <EditText
+                            android:id="@+id/EditText_Field_Height"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="normal"
+                            android:textAllCaps="false"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:hint="Height"
+                            android:background="@color/colorless"
+                            android:visibility="visible"
+                            android:clickable="true"
+                            android:focusable="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                <ScrollView
+                    android:layout_below="@+id/TextInputLayout_Field_Height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_shape_006"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout_BMI_Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/TextView_BMI_Number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:hint=""
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="50dp"
+                            android:textStyle="normal"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:clickable="false"
+                            android:focusable="false" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="15dp">
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Grade_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:background="@drawable/bg_shape_014">
+
+                                <Button
+                                    android:id="@+id/Button_Grade_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorless"
+                                    android:layout_weight="9"
+                                    app:backgroundTint="@null"
+                                    android:layout_margin="1dp"
+                                    android:text="UnderWeight"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:maxLines="1"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageView_Grade_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:src="@drawable/ic_hea_check"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Grade_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:background="@drawable/bg_shape_015">
+
+                                <Button
+                                    android:id="@+id/Button_Grade_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorless"
+                                    android:layout_weight="9"
+                                    app:backgroundTint="@null"
+                                    android:layout_margin="1dp"
+                                    android:text="Healthy weight"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:maxLines="1"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageView_Grade_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:src="@drawable/ic_hea_check"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Grade_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:background="@drawable/bg_shape_016">
+
+                                <Button
+                                    android:id="@+id/Button_Grade_3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorless"
+                                    android:layout_weight="9"
+                                    app:backgroundTint="@null"
+                                    android:layout_margin="1dp"
+                                    android:text="Overweight"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:maxLines="1"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageView_Grade_3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:src="@drawable/ic_hea_check"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Grade_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:background="@drawable/bg_shape_017">
+
+                                <Button
+                                    android:id="@+id/Button_Grade_4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorless"
+                                    android:layout_weight="9"
+                                    app:backgroundTint="@null"
+                                    android:layout_margin="1dp"
+                                    android:text="Obesity"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:maxLines="1"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageView_Grade_4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:src="@drawable/ic_hea_check"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_Grade_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:background="@drawable/bg_shape_018">
+
+                                <Button
+                                    android:id="@+id/Button_Grade_5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorless"
+                                    android:layout_weight="9"
+                                    app:backgroundTint="@null"
+                                    android:layout_margin="1dp"
+                                    android:text="Excessive obesity"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:maxLines="1"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageView_Grade_5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:src="@drawable/ic_hea_check"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.adivery.sdk.AdiveryBannerAdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_ad"
+        app:placement_id="e7ab55a6-138b-4b30-8a98-f75b4541466a"
+        app:banner_size="smart_banner"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>

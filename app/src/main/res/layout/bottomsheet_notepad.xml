@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout_BSN_NotePad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="@color/colorless">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape_006"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_BSN_Keys"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="@drawable/bg_shape_002"
+            android:layout_margin="1dp">
+
+            <ImageView
+                android:id="@+id/ImageView_BSN_DeleteAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_cal_notepad_trash"
+                android:background="@drawable/bg_selector_005"/>
+
+            <TextView
+                android:id="@+id/TextView_BSN_NotePad"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="1dp"
+                android:text="NotePad"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_shape_002"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"/>
+
+            <ImageView
+                android:id="@+id/ImageView_BSN_Close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_cal_notepad_close"
+                android:background="@drawable/bg_selector_005"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView_BSN_NotePad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/LinearLayout_BSN_Keys"
+            android:layout_above="@+id/banner_ad_NotePad"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="15dp"/>
+
+        <com.adivery.sdk.AdiveryBannerAdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/banner_ad_NotePad"
+            app:placement_id="7531d171-1e41-45a4-bead-327c50e3dd45"
+            app:banner_size="smart_banner"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

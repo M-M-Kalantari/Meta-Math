@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout_BSH_History"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="@color/colorless">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape_006"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_BSH_Keys"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="@drawable/bg_shape_002"
+            android:layout_margin="1dp">
+
+            <ImageView
+                android:id="@+id/ImageView_BSH_DeleteAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_cal_history_trash"
+                android:background="@drawable/bg_selector_005"/>
+
+            <TextView
+                android:id="@+id/TextView_BSH_History"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="1dp"
+                android:text="History"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_shape_002"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"/>
+
+            <ImageView
+                android:id="@+id/ImageView_BSH_Close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_cal_history_close"
+                android:background="@drawable/bg_selector_005"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView_BSH_History"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/LinearLayout_BSH_Keys"
+            android:layout_above="@+id/banner_ad_History"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp" />
+
+        <com.adivery.sdk.AdiveryBannerAdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/banner_ad_History"
+            app:placement_id="c40e82e4-8940-4c76-b690-bd5975560137"
+            app:banner_size="smart_banner"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_ITN"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_ITN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_shape_006"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:weightSum="2.5"
+            android:paddingLeft="5dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:focusable="false">
+
+                <TextView
+                    android:id="@+id/TextView_ITN_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:hint=""
+                    android:maxLines="1"
+                    android:padding="1dp"
+                    android:text="Title"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="35dp"
+                    android:textStyle="normal"
+                    android:clickable="false"
+                    android:focusable="false"/>
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:focusable="false">
+
+                <TextView
+                    android:id="@+id/TextView_ITN_Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLines="1"
+                    android:padding="1dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/gray"
+                    android:textIsSelectable="true"
+                    android:textSize="30dp"
+                    android:textStyle="normal"
+                    android:clickable="false"
+                    android:focusable="false"/>
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.5"
+                android:clickable="false"
+                android:focusable="false">
+
+                <TextView
+                    android:id="@+id/TextView_ITN_DateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLines="1"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:clickable="false"
+                    android:focusable="false"/>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_shape_012"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ImageView_ITN_Copy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_selector_005"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_cal_history_copy"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ImageView_ITN_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_selector_005"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_cal_notepad_delete" />
+
+            <ImageView
+                android:id="@+id/ImageView_ITN_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_selector_005"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_cal_notepad_pencil" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

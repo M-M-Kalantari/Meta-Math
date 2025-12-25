@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout_BSNE_NotePad_Enter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="@color/colorless">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_010"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorless">
+
+            <EditText
+                android:id="@+id/EditText_BSNE_EnterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:hint="Please enter a title."
+                android:background="@color/colorless"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorless">
+
+            <EditText
+                android:id="@+id/EditText_BSNE_EnterNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:hint="Please enter a number."
+                android:background="@color/colorless"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="@drawable/bg_shape_013"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/ImageView_BSNE_Plus"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_cal_notepad_sign_plus"
+                        android:background="@drawable/bg_selector_004"/>
+
+                    <ImageView
+                        android:id="@+id/ImageView_BSNE_Minus"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_cal_notepad_sign_minus"
+                        android:background="@drawable/bg_selector_004"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/ImageView_BSNE_Times"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_cal_notepad_sign_times"
+                        android:background="@drawable/bg_selector_004"/>
+
+                    <ImageView
+                        android:id="@+id/ImageView_BSNE_Division"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_cal_notepad_sign_division"
+                        android:background="@drawable/bg_selector_004"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ImageView_BSNE_Cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_cal_notepad_cancel"
+                    android:background="@drawable/bg_selector_005"/>
+
+                <ImageView
+                    android:id="@+id/ImageView_BSNE_OK"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_cal_notepad_ok"
+                    android:background="@drawable/bg_selector_005"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
